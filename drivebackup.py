@@ -79,7 +79,7 @@ class Mydrive():
                 port = 587  # For starttls
                 smtp_server = "smtp.gmail.com"
                 sender_email = os.getenv('SENDER_EMAIL')
-                receiver_email = "danigitari@gmail.com"
+                receiver_email = ""
                 password = os.getenv('PASSWORD')
                 msg = "The backup job for " + os.getenv('CLIENT_NAME') + " database has been successfuly executed and uploaded into Google Drive"
                 error_msg = "The backup job for " + os.getenv('CLIENT_NAME') + " database has failed to upload to Google Drive. The error response was FILE NOT FOUND "
