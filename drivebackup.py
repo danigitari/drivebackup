@@ -115,9 +115,9 @@ def main():
     path = os.path.abspath(__file__)
     files = os.listdir()
     dir_path = os.path.dirname(path)
-    backup = 'danigitaridb.sql'
+    backup = 'backup.sql'
     join_path = os.path.join(dir_path, backup)
-    backup_path = './danigitaridb.sql'
+    backup_path = './backup.sql'
     if backup in files:
          my_drive.upload_files(backup, dir_path)
     else:
